@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onload="loaderhide()">
+  
+     <div id="loader">
+        <div id="curcle"></div>
+           </div>
+
+        <div id="homebody">
+
+       <!---------------------------HEADER-START------------------------>
+   <header>
+
+        <div id="navbar">
+          <div id="logobox"><div id="logo"></div><h3>RENO</h3></div>
+
+           <div id="option">
+           
+             <a href="index.html" id="home" style="background-color: black;"  >Home</a>
+             <a href="service.html" id="service">Services</a>
+             <a href="https://www.linkedin.com/in/azim-bashar-5a0346278" id="contact">About us</a>
+             <a href="login.html" id="login">Login</a>
+        
+            </div>
+           <i id="showbtn" class="fa-solid fa-bars"></i>
+         </div>
+
+        <div id="sidebar">
+          <div id="menu">
+                  
+            <a href="index.html" id="home" style="background-color: black;"  >Home</a>
+            <a href="service.html" id="service">Services</a>
+            <a href="https://www.linkedin.com/in/azim-bashar-5a0346278" id="about">About us</a>
+            <a href="login.html" id="login">Login</a>
+       
+          </div>
+         </div>
+        </header>
+                <!---------------------------HEADER-END------------------------>
+
+        <div id="headingarea">
+       <h2>Renovate your dream house.</h2>
+       
+      </div>
+      <div id="slideframe1">
+       <div id="slideframe2">
+           
+            <img src="slide1.jpg">
+            <img src="slide2.jpg">
+            <img src="slide3.jpg">
+            <img src="slide4.jpg">
+            <img src="slide5.jpg">
+          
+            </div>
+           </div>
+         <div id="ready"> 
+        <p>Do You Want To</p>
+       <button type="button" id="advicebtn"><a href="service.html">Get Free Advice</a></button>
+     </div>
+    <div id="container">
+
+       <div id="item1"></div>
+       <div id="item2"></div>
+       <div id="item3"></div>
+       <div id="item4"></div>
+       <div id="item5"></div>
+       <div id="item6"></div>
+       <div id="item7"></div>
+       <div id="item8"></div>
+
+   </div>
+           <!---------------------------FOOTER-START------------------------>
+   <footer>    
+     <div id="foot">
+        <div id="footheading">
+          <h2>why choose us?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nihil nam modi fugit repellendus harum explicabo, tempore natus mollitia asperiores necessitatibus quod quos soluta porro sit beatae blanditiis totam maiores.</p>
+             </div>
+                <div id="news"> 
+                  <h2>Newsletter</h2>
+                    <p>Subscribe Us For Letest Updates</p>
+                    <div id="subscribe">
+                   <input type="gmail" id="emailbox" placeholder="Your Email">
+                <button id="sbutton" type="submit">subscribe</button>
+              </div>
+            </div>
+         </div>
+        <div id="end">Created By |<p> Mr. Azim Bashar</p></div>
+    </footer>
+
+  </div>
+</div>
+           <!---------------------------FOOTER-END------------------------>
+
+    <script>
+     
+     function loaderhide()
+
+     {
+       document.getElementById("loader").style.display=("none");
+     }
+   
+     document.getElementById("showbtn").addEventListener("click",function(){ document.getElementById("sidebar").classList.toggle("active");});
+
+    </script> 
+
+  </body>
+</html>
