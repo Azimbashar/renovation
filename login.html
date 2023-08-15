@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onload="loaderhide()" >
+
+  <div id="logbody">
+
+    <div id="loader">
+      <div id="curcle"></div>
+         </div>
+         
+      <!---------------------------HEADER-START------------------------>
+<header>
+
+          <div id="navbar">
+            <div id="logobox"><div id="logo"></div><h3>RENO</h3></div>
+            
+              <div id="option">
+  
+                  <a href="index.html" id="home">Home</a>
+                  <a href="service.html" id="service">Services</a>
+                  <a href="https://www.linkedin.com/in/azim-bashar-5a0346278" id="about">About us</a>
+                  <a href="login.html" id="login" style="background-color: black;"  >Login</a>
+
+              </div>
+           <i id="showbtn" class="fa-solid fa-bars"></i>  
+         </div>
+
+       <div id="sidebar">
+        <div id="menu">
+ 
+           <a href="index.html" id="home">Home</a>
+           <a href="service.html" id="service">Services</a>
+           <a href="https://www.linkedin.com/in/azim-bashar-5a0346278" id="about">About us</a>
+           <a href="login.html" id="login" style="background-color: black;"  >Login</a>
+
+       </div>
+     </div>
+
+</header>
+      <!---------------------------HEADER-END------------------------>
+   
+      <div id="frame">
+         <h3>Login form</h3>
+             <div id="form">
+
+              <form action="#">
+
+    <form action="#">
+                <input type="text" class="input" name="username" placeholder="username" autocomplete="off" required >  
+                 <input type="password" class="input" name="password" placeholder="password" autocomplete="off" required >
+                 <div id="forget"><a href="#">Forget password</a></div>
+               </div>
+             <button id="logbtn" type="submit" name="login">login</button>
+             <p id="create">create an account<a href="#" id="signup">Sign up</a></p>
+
+            </form>
+       </div>
+    </div>
+    
+    <script>
+     
+      function loaderhide()
+      {
+        document.getElementById("loader").style.display=("none");
+      }
+    
+      document.getElementById("showbtn").addEventListener("click",function(){ document.getElementById("sidebar").classList.toggle("active");});
+ 
+     </script> 
+
+</body>
+</html>
